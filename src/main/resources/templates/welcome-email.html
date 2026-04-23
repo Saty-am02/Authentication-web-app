@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Authify</title>
+</head>
+<body style="margin:0; padding:0; background-color:#f4f4f4; font-family:Arial, sans-serif;">
+
+<table width="100%" cellpadding="0" cellspacing="0" style="padding:20px;">
+    <tr>
+        <td align="center">
+
+            <table width="500" cellpadding="0" cellspacing="0"
+                   style="background:#ffffff; border-radius:10px; padding:30px;">
+
+                <!-- Logo -->
+                <tr>
+                    <td align="center" style="padding-bottom:20px;">
+                        <h2 style="margin:0; color:#333;">Authify</h2>
+                    </td>
+                </tr>
+
+                <!-- Title -->
+                <tr>
+                    <td align="center">
+                        <h2 style="color:#333;">Welcome 🎉</h2>
+                        <p style="color:#777;">
+                            Hello <span th:text="${name}">User</span>,
+                        </p>
+                        <p style="color:#777;">
+                            Thanks for joining Authify!
+                        </p>
+                    </td>
+                </tr>
+
+                <!-- Message -->
+                <tr>
+                    <td align="center" style="padding:20px;">
+                        <p style="color:#555;">
+                            Your account has been successfully created.
+                            Start exploring secure authentication with Authify.
+                        </p>
+                    </td>
+                </tr>
+
+                <!-- Footer -->
+                <tr>
+                    <td align="center" style="padding-top:20px;">
+                        <p style="color:#aaa; font-size:12px;">
+                            We’re glad to have you onboard 🚀
+                        </p>
+                    </td>
+                </tr>
+
+            </table>
+
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>

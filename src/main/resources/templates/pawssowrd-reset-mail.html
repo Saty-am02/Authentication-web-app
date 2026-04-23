@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Reset Your Password</title>
+</head>
+<body style="margin:0; padding:0; background-color:#f4f4f4; font-family:Arial, sans-serif;">
+
+<table width="100%" cellpadding="0" cellspacing="0" style="padding:20px;">
+    <tr>
+        <td align="center">
+
+            <table width="500" cellpadding="0" cellspacing="0"
+                   style="background:#ffffff; border-radius:10px; padding:30px;">
+
+                <!-- Logo -->
+                <tr>
+                    <td align="center" style="padding-bottom:20px;">
+                        <h2 style="margin:0; color:#333;">Authify</h2>
+                    </td>
+                </tr>
+
+                <!-- Title -->
+                <tr>
+                    <td align="center">
+                        <h2 style="color:#333;">Reset Your Password</h2>
+                        <p style="color:#777;">
+                            Use the OTP below to reset your password
+                        </p>
+                    </td>
+                </tr>
+
+                <!-- OTP -->
+                <tr>
+                    <td align="center" style="padding:20px 0;">
+                        <div style="display:inline-block; padding:15px 30px;
+                        font-size:28px; letter-spacing:5px;
+                        background:#fff4f4; border-radius:8px;
+                        color:#c53030; font-weight:bold;">
+                            <span th:text="${otp}">123456</span>
+                        </div>
+                    </td>
+                </tr>
+
+                <!-- Info -->
+                <tr>
+                    <td align="center">
+                        <p style="color:#999; font-size:14px;">
+                            This OTP will expire in 10 minutes.
+                        </p>
+                    </td>
+                </tr>
+
+                <!-- Footer -->
+                <tr>
+                    <td align="center" style="padding-top:20px;">
+                        <p style="color:#aaa; font-size:12px;">
+                            If you didn’t request this, ignore this email.
+                        </p>
+                    </td>
+                </tr>
+
+            </table>
+
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
